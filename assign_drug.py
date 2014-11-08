@@ -1,7 +1,7 @@
 def assign_drug(filename):
     number = filename[13:-4]
     result = ''
-    if(int(number)%2) == 1:
+    if(int(number) % 2) == 1:
       result = 'tylenol'
     else:
       result = 'placebo'
@@ -9,8 +9,8 @@ def assign_drug(filename):
 
 import sys
 
-filename = sys.arg[1]
-print filename
+filename = sys.arg[1] 
+print assing_drug(filename)
 
 assert assign_drug("inflammation_1.dat") == "tylenol"
 assert assign_drug("inflammation_2.dat") == "placebo"

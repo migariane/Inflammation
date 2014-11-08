@@ -1,10 +1,11 @@
 def assign_drug(filename):
+    '''Assigns a drug to a file name'''
     number = filename[13:-4]
     result = ''
     if(int(number) % 2) == 1:
-      result = 'tylenol'
+        result = 'tylenol'
     else:
-      result = 'placebo'
+        result = 'placebo'
     return result
 
 import sys

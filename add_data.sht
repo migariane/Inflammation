@@ -1,3 +1,4 @@
+
 set -x
 DRUG=$(python assign_drug.py $2)
 DEST=$S3/$1/$1-$DRUG.dat

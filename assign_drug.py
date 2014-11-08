@@ -10,7 +10,7 @@ def assign_drug(filename):
 
 import sys
 
-filename = sys.arg[1] 
+filename = sys.argv[1] 
 print assign_drug(filename)
 
 assert assign_drug("inflammation_1.dat") == "tylenol"
